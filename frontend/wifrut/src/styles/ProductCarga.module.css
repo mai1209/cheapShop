@@ -1,0 +1,64 @@
+
+
+.title {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px auto;
+  backdrop-filter: blur(20px);
+  z-index: -1;
+  border-radius: 15px;
+  background-color: #d4d4d415;
+   border: 1px solid #0c0c0c6b;
+  gap: 20px;
+  max-width: 900px;
+
+}
+.hiddenInput{
+  color: #000;
+  
+}
+
+.customFileButton{
+  color: #000;
+  
+}
+
+.btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  margin-left: 10px;
+  background-color: #FFB83B;
+  border-radius: 13px;
+  padding: 2px 5px;
+}
+
+/* 📱 Ajuste para pantallas pequeñas */
+@media (max-width: 1000px) {
+.title{
+  font-size: 15px;
+}
+
+.customFileButton, .hiddenInput, .btn{
+ font-size: 10px;
+  
+}
+.container {
+
+  margin: auto 20px;
+  
+}
+
+}

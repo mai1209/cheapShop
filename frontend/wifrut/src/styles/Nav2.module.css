@@ -1,0 +1,457 @@
+.containerNameUser {
+  display: flex;
+  height: 100%;
+  gap: 10px;
+  width: fit-content;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-left: 30px;
+
+}
+.arrow {
+  cursor: pointer;
+}
+.containerLogoutOrder {
+  background-color: #fff;
+
+  position: absolute;
+  top: 93px;
+  right: 0;
+  z-index: 10000;
+  padding-top: 10px;
+
+}
+
+.btnContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-right: 10px ;
+  align-items: center;
+  border-bottom: #00000041 1px solid;
+  width: 200px;
+  height: 50px;
+
+}
+
+.btnContainer button {
+  background: none;
+  border: none;
+  font-size: 15px;
+}
+.btnCerrarSesion {
+  display: none;
+}
+.logo {
+  width: 85px;
+  height: 85px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.titleLog {
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.truck {
+  display: inline-block;
+  animation: slideLeft 3s linear infinite;
+}
+.logoutbtn {
+  width: 12px;
+  height: 12px;
+}
+/* Animación */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+.containerLog {
+  background-color: #479200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+}
+
+.containerLinks {
+  display: flex;
+  transition: top 0.3s ease-in-out;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.linkContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.btnClose {
+  display: none;
+}
+
+.btnMenu {
+  display: none;
+}
+
+.search input {
+  background: none;
+  border: none;
+  width: 250px;
+  height: 33px;
+  border: 1px solid #000;
+  border-radius: 13px;
+  padding-left: 30px;
+}
+
+.search input::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.searchBtn {
+  position: absolute;
+  left: 9px;
+}
+
+.cart {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.cartContainer {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  height: 33px;
+  
+}
+
+.CartNumber {
+  position: relative;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+}
+
+.CartNumber p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.logoUser {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.logoUser2 {
+  display: none;
+}
+
+.btnLogin {
+  display: none;
+}
+
+.btnLogin2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0 20px;
+  width: fit-content;
+}
+.btnLogin2 button {
+  font-size: 13px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.categorias {
+  display: none;
+}
+.a {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  color: #000;
+}
+
+.a svg {
+  display: none;
+}
+
+.floatingArrow {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  color: #247504;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.whatsappButton {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+  filter: drop-shadow(0px 4px 6px rgb(0, 0, 0));
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.truck {
+  display: inline-block;
+  margin-left: 0.5ch;
+  animation: drive 1s ease-in-out infinite alternate;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-15px);
+  }
+}
+
+/* Estilos para pantallas menores a 768px */
+@media (max-width: 966px) {
+  .floatingArrow {
+    bottom: 60px;
+    right: 10px;
+  }
+  .whatsappButton {
+    bottom: 20px;
+    right: 17px;
+  }
+  .a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    border-bottom: #00000041 1px solid;
+    width: 190px;
+    width: 200px;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .a:hover {
+    text-shadow: 2px 2px 5px yellow;
+  }
+
+  .categorias {
+    display: block;
+  }
+
+  .linkContainer {
+    background-color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    position: fixed;
+    min-width: 220px;
+    top: 0;
+    left: 0 !important;
+    height: 100vh;
+    z-index: 1;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 60px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+  }
+  .a {
+    color: #000;
+  }
+  .linkContainer.open {
+    transform: translateX(0);
+  }
+
+  .categoriasContainer {
+    display: flex;
+  }
+
+  .aCategories {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: #00000041 1px solid;
+    padding: 5px 0;
+    width: 190px;
+  }
+
+  .logoUser {
+    display: none;
+  }
+
+  .logoUser2 {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .search input {
+    width: 160px;
+    height: 28px;
+  }
+  .search {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .btnClose {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .btnMenu {
+    display: block;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+  }
+  .cartContainer {
+    font-size: 9px;
+    gap: 5px;
+  }
+
+  .cart {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btnLogin {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 0;
+  }
+  .btnLogin button {
+    font-size: 13px;
+    border: none;
+    background: none;
+  }
+
+  .btnLogin2 {
+    display: none;
+  }
+
+  .a svg {
+    display: flex;
+  }
+
+  .btnCerrarSesion {
+    display: flex;
+    flex-direction: column;
+  }
+  .btnCerrarSesion2 {
+    display: none;
+  }
+
+  .userLogin {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    width: 210px;
+  }
+
+  .btnContainerMobil {
+    margin-top: 15px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttonMenu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    border-bottom: #00000041 1px solid;
+  }
+  .buttonMenu button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .logoutbtn {
+    width: 12px;
+    height: 12px;
+  }
+}

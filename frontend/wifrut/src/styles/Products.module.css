@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Imagen */
+.img {
+  width: 240px;
+  height: 50%;
+  object-fit: cover;
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  border-radius: 10px;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 126px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #257504;
+  color: #fff;
+}
+.registerBtn {
+  background-color: #005234;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.description {
+  font-size: 11px;
+  color: #0000;
+  font-weight: 600;
+}
+
+.loadingBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.registerBtn:disabled {
+  background-color: #247504;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.userDropdown,
+.userDropdownDesktop {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.userGreeting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownMenu button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdownMenu button:hover {
+  background-color: #f0f0f0;
+}
+
+.iconOfertas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconOfertas:hover {
+  transform: scale(1.08);
+}
+
+.iconOfertas img {
+  width: 50px;
+  height: 50px;
+}
+.containerOfertas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.descuento {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.arrowLeft,
+.arrowRight {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+.arrowLeft:hover,
+.arrowRight:hover {
+  transform: scale(1.2);
+}
+.arrowIcon {
+  font-size: 2rem;
+  color: #0a0700;
+}
+.productName {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;text-align: center;
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 20px;
+  max-width: 1500px;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  width: 240px;
+  height: 370px;
+  border-radius: 11px;
+  padding: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.41);
+  position: relative;
+}
+
+
+.sale {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+.sale img {
+  width: 45px;
+  height: 45px;
+}
+.sale p {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.priceUnit {
+  background-color: #ffb83b;
+  width: 100%;
+  text-align: center;
+  color: #535353;
+  font-size: 14px;
+}
+.description {
+  color: #535353;
+}
+.quantitySelection {
+  font-size: 13px;
+}
+.quantityContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.quantityContainer span {
+  color: black;
+  font-size: 16px;
+}
+.quantityContainer button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.total {
+  background-color: #ffb83b;
+  padding: 0 5px;
+  border-radius: 33px;
+  color: #535353;
+}
+.addCart {
+  background-color: #247504;
+  color: #d9d9d9;
+  border: none;
+  width: 197px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.containerseeMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+.containerCategory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 10px;
+}
+.containerCategory button {
+  font-size: 17px;
+  color: #535353;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 5px;
+  background-color: #ffb83b;
+  border-radius: 13px;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+.offOfertas {
+  display: flex;
+  justify-content: center;
+}
+.hortalizas,
+.Frutas {
+  display: flex;
+  gap: 10px;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+}
+.customAlert {
+  background-color: rgba(212, 212, 212, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 1px solid #d4d4d4d6;
+  color: #000;
+  font-size: 12px;
+  display: flex;
+}
+.customAlertInfo {
+  background-color:#fff;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 1px solid #d4d4d4d6;
+  color: #000;
+  font-size: 12px;
+  display: flex;
+  height: 400px;
+}
+.customIconSuc {
+  font-size: 10px;
+  background-color: #004718;
+  text-align: center;
+}
+.customIconErr {
+  font-size: 5px;
+  background-color: #b90003;
+  text-align: center;
+}
+.categoryTitle {
+  color: black;
+  font-weight: 500;
+  padding-top: 0;
+  font-size: 46px;
+}
+.titleOfertas {
+  font-weight: 800;
+  font-size: 52px;
+  text-align: center;
+  color: #ba457b;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.titleOfertas:hover {
+  transform: scale(1.08);
+}
+.categoryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  gap: 10px;
+}
+.iconCategories {
+  width: 40px;
+  height: 40px;
+}
+
+/* Pega esto al final de tu archivo Products.module.css */
+
+/* Estilo para el contenedor del producto cuando no hay stock */
+.disabledProduct {
+  opacity: 0.6;
+  filter: grayscale(80%); /* Lo pone en escala de grises para que se note más */
+}
+
+/* Contenedor para el texto "SIN STOCK" */
+.sinStockContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto; /* Empuja el cartel hacia abajo */
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* Estilo del texto "SIN STOCK" */
+.sinStockText {
+  font-weight: bold;
+  color: #c0392b; /* Un color rojo */
+  border: 2px solid #c0392b;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: rgba(192, 57, 43, 0.1);
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .iconCategories {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    gap: 20px;
+    overflow-x: scroll;
+    margin: 0 10px;
+    background-color: transparent;
+    padding: 15px 0 20px 0;
+  }
+  .categoryTitle {
+    font-size: 30px;
+  }
+  .categoryContainer {
+    padding: 10px 0 0 10px;
+  }
+  .cartContainer {
+    width: 200px;
+  }
+  .img {
+    width: 170px;
+    height: 140px;
+    border-radius: 13px;
+  }
+  .addCart {
+    width: 150px;
+    font-size: 15px;
+  }
+  .seeMoreBtn {
+    height: 30px;
+    width: 140px;
+    font-size: 12px;
+    font-family: "Poppins", serif;
+    color: #ffffff;
+  }
+  .containerCategory {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 10px;
+  }
+  .containerCategory button {
+    font-size: 12px;
+    padding: 0;
+    height: 30px;
+    width: 100%;
+  }
+  .hortalizas,
+  .Frutas {
+    flex-direction: column;
+  }
+  .arrow {
+    transform: rotate(90deg);
+    width: 15px;
+    height: 15px;
+  }
+  .titleOfertas {
+    font-size: 30px;
+  }
+  .quantitySelection,
+  .total {
+    text-align: center;
+  }
+  .total {
+    font-size: 14px;
+  }
+  .customAlert {
+    font-size: 10px;
+  }
+  .iconOfertas {
+    font-size: 20px;
+  }
+  .offOfertas {
+    font-size: 10px;
+  }
+  .discountBadge {
+    top: 115px;
+    height: 40px;
+    width: 40px;
+  }.productName {
+  font-size: 14px;
+  
+}
+}

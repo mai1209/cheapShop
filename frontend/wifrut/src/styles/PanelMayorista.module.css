@@ -1,0 +1,116 @@
+.navContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  background-color: #d4d4d415;
+   border: 1px solid #0c0c0c6b;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.navContent ul li {
+  border: 1px solid #0c0c0c6b;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 13px;
+  border-radius: 10px;
+  height: 120px;
+  flex-direction: row;
+  color: #000;
+  padding: 0 5px;
+}
+
+.navContent h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.solicitudInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: auto;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.solicitudesList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.solicitudActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.aprobarBtn {
+  background-color: #adad007e;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color:#000;
+  margin: 8px;
+}
+
+.rechazarBtn {
+  background-color: #b900037e;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  margin: 8px;
+}
+
+
+
+
+
+
+
+@media (max-width: 790px) {
+  .navContent {
+    padding: 10px;
+    gap: 2px;
+  }
+
+  .aprobarBtn {
+    font-size: 10px;
+    width: 70px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 10px;
+  }
+
+  .rechazarBtn {
+    font-size: 10px;
+    width: 70px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 10px;
+  }
+  .solicitudInfo {
+    padding: 0 2px;
+    font-size: 9px;
+  }
+  .solicitudActions {
+    justify-content: none;
+  }
+  .solicitudActions {
+    display: flex;
+  }
+}
