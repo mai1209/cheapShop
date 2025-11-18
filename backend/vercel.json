@@ -8,7 +8,7 @@
     {
       "src": "frontend/darko/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "frontend/darko/dist" }
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
@@ -18,7 +18,7 @@
     },
     { "handle": "filesystem" },
     {
-      "src": "(/.*)",
+      "src": "/(.*)",
       "dest": "frontend/darko/dist/index.html"
     }
   ]
