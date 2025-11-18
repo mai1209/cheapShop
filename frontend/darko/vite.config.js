@@ -10,17 +10,13 @@ export default defineConfig({
   server: {
     host: true,
     allowedHosts: [
-      "wifrut-client.cap.wifrut.com",
-      "wifrut.com",
-      "www.wifrut.com",
+      "cheap-shop-two.vercel.app"
     ],
   },
   preview: {
     host: true,
     allowedHosts: [
-      "wifrut-client.cap.wifrut.com",
-      "wifrut.com",
-      "www.wifrut.com",
+      "cheap-shop-two.vercel.app"
     ],
   },
 });
