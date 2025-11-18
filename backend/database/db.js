@@ -29,7 +29,13 @@ export const connectDB = async () => {
         isConnected = true;
         console.log(`✅ Conectado a la base de datos en modo ${process.env.NODE_ENV}`);
     } catch (error) {
+        // No hacemos `process.exit(1)` porque en entornos serverless (Vercel) esto mata la función
+        // y causa fallos irreversibles. Mejor registramos el error y lo re-lanzamos para que el
+        // handler pueda decidir cómo responder.
         console.error("❌ Error al conectarse a MongoDB:", error.message);
-        process.exit(1);
+        // Añadimos más contexto para ayudar al diagnóstico
+        if (error.stack) console.error(error.stack.split('\n').slice(0,3).join('\n'));
+        // Re-lanzar el error para que el caller lo maneje (p. ej. devolver 500 en la request)
+        throw error;
     }
 };
