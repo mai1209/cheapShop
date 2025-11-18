@@ -7,19 +7,12 @@
     },
     {
       "src": "frontend/darko/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/api/index.js"
-    },
+    { "src": "/api/(.*)", "dest": "backend/api/index.js" },
     { "handle": "filesystem" },
-    {
-      "src": "/(.*)",
-      "dest": "frontend/darko/dist/index.html"
-    }
+    { "src": "/(.*)", "dest": "frontend/darko/dist/$1" }
   ]
 }
