@@ -45,7 +45,7 @@ app.use(express.urlencoded({ extended: true }));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.resolve(__dirname, "../frontend/wifrut/public")));
+app.use(express.static(path.resolve(__dirname, "../frontend/darko/public")));
 
 connectDB();
 
@@ -72,10 +72,10 @@ app.use("/api/geocode", geocodingRoutes);
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // Iniciar servidor
-//const PORT = process.env.PORT || 3000;
-//app.listen(PORT, () => {
-//console.log(`Servidor corriendo en el puerto ${PORT}`);
-//});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+console.log(`Servidor corriendo en el puerto ${PORT}`);
+});
 
 // const port = process.env.PORT || 3000;
 // app.set("port", port);
