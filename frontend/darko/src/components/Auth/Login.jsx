@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { useAuth } from "../../context/AuthContext";
 
-function Login() {
+function  
+Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [errors, setErrors] = useState({});

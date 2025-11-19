@@ -22,7 +22,7 @@ function Footer() {
         <img src="./img9.png" alt="img9" />
         <img src="./img10.png" alt="img10" />
       </div>
-      <hr />
+      <hr  className= {style.divider}/>
       <div className={style.containerLinks}>
         <div className={style.links}>
           <p className={style.p}>CONOCE NUESTRA LOGISTICA</p>
@@ -42,7 +42,7 @@ function Footer() {
         </div>
       </div>
       <div className={style.powered}>
-        <p>&lt; Powered by Codex ASTRA /&gt;</p>
+        <p>&lt; Powered by CODEX Corporation & Business Ⓡ /&gt;</p>
       </div>
     </div>
   );

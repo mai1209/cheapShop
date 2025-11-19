@@ -124,6 +124,7 @@
 
 .btnMenu {
   display: none;
+  color: #ffffff;
 }
 
 .search input {
@@ -134,6 +135,7 @@
   border: 2px solid #ffffff;
   border-radius: 10px;
   padding-left: 30px;
+  color: #CB0D71;
 }
 
 .search input::placeholder {
@@ -311,7 +313,7 @@
     cursor: pointer;
   }
   .a:hover {
-    text-shadow: 2px 2px 5px yellow;
+    text-shadow: 2px 2px 5px #CB0D71;
   }
 
   .categorias {

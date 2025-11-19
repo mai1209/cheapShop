@@ -1,5 +1,5 @@
 .registerBtn {
-  background-color: #005234;
+  background-color: #CB0D71;
   color: white;
   border: none;
   padding: 5px 5px;
@@ -10,7 +10,7 @@
 }
 
 .registerBtn:disabled {
-  background-color: #247504;
+  background-color: #CB0D71;
   cursor: not-allowed;
 }
 
@@ -31,10 +31,7 @@
 }
 
 .container {
-  background-image: url("/backG.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+ 
   max-height: fit-content;
   min-height: 100vh;
   backdrop-filter: blur(20px);
@@ -44,7 +41,7 @@
   align-items: center;
 }
 .containerLogin {
-  background-image: url("/backG.png");
+  background-image: url("/background4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -153,7 +150,7 @@ span {
 span button {
   background: none;
   border: none;
-  color: #005234;
+  color: #CB0D71;
   padding-left: 10px;
   cursor: pointer;
 }
@@ -208,7 +205,7 @@ span button {
 .select option {
   backdrop-filter: blur(20px);
   z-index: -1;
-  background-color: #00ad3ae5;
+  background-color: #CB0D71;
   border: 1px solid #d4d4d46b;
 }
 
@@ -247,10 +244,10 @@ span button {
     height: 110px;
   }
   .container {
-    background-image: url("/fondoM.png");
+    background-image: url("/backgroundLR.png");
   }
   .containerLogin {
-    background-image: url("/fondoM.png");
+    background-image: url("/background4.jpg");
   }
   .customAlert {
     font-size: 10px;

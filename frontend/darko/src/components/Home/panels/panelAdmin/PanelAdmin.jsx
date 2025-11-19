@@ -17,7 +17,7 @@ function PanelAdmin() {
     <div className={style.container}>
       <p className={style.title}>Panel administrador</p>
       <div className={style.btnLogout}>
-        <img className={style.logoutbtn} src="/cerrar-sesion.png" alt="" />
+        <img className={style.logoutbtn} src="/cerrar-sesion.png" alt="btn-logout" />
         <button  onClick={logout}>
           Cerrar Sesion
         </button>

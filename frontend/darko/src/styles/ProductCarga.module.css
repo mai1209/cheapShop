@@ -1,7 +1,7 @@
 
 
 .title {
-  color: #000;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
   margin: 20px auto;
@@ -30,7 +30,7 @@
 }
 
 .customFileButton{
-  color: #000;
+  color: #ffffff;
   
 }
 
@@ -38,11 +38,11 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #000;
+  color: #ffffff;
   margin-left: 10px;
-  background-color: #FFB83B;
-  border-radius: 13px;
-  padding: 2px 5px;
+  background-color: #CB0D71;
+  padding: 0.7rem;
+  border-radius: 1rem;
 }
 
 /* 📱 Ajuste para pantallas pequeñas */
