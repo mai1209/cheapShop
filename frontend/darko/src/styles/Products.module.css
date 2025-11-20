@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /* Imagen */
 .img {
@@ -23,11 +24,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #257504;
+  background-color: #CB0D71;
   color: #fff;
 }
+
 .registerBtn {
-  background-color: #005234;
+  background-color: #CB0D71;
   color: white;
   border: none;
   padding: 5px 5px;
@@ -48,8 +50,9 @@
   justify-content: center;
   margin-top: 20px;
 }
+
 .registerBtn:disabled {
-  background-color: #247504;
+  background-color: #CB0D71;
   cursor: not-allowed;
 }
 
@@ -111,25 +114,18 @@
   background-color: #f0f0f0;
 }
 
-.iconOfertas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.iconOfertas:hover {
-  transform: scale(1.08);
-}
 
-.iconOfertas img {
-  width: 50px;
-  height: 50px;
-}
+
+
 .containerOfertas {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  gap: 2rem;
+  padding: 4rem 0;
+  background-color: #383838;
 }
 
 .carouselWrapper {
@@ -138,6 +134,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  background-color: #383838;
 }
 
 .descuento {
@@ -146,7 +143,9 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  background-color: #383838;
 }
+
 .arrowLeft,
 .arrowRight {
   background: transparent;
@@ -155,18 +154,22 @@
   z-index: 10;
   transition: transform 0.2s ease;
 }
+
 .arrowLeft:hover,
 .arrowRight:hover {
   transform: scale(1.2);
 }
+
 .arrowIcon {
   font-size: 2rem;
   color: #0a0700;
 }
+
 .productName {
   font-size: 14px;
   font-weight: 500;
-  text-transform: uppercase;text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .container {
@@ -177,6 +180,7 @@
   padding: 20px;
   max-width: 1500px;
 }
+
 .container::-webkit-scrollbar {
   display: none;
 }
@@ -197,61 +201,57 @@
 }
 
 
-.sale {
-  position: absolute;
-  top: -15px;
-  right: -15px;
+.containerOfertas {
+  gap: 1rem;
 }
-.sale img {
-  width: 45px;
-  height: 45px;
-}
-.sale p {
-  position: absolute;
-  top: 7px;
-  right: 15px;
-  color: white;
-  font-size: 20px;
-}
+
+
 
 
 .priceUnit {
-  background-color: #ffb83b;
+  background-color: #383838 ;
   width: 100%;
   text-align: center;
-  color: #535353;
+  color: #ffffff;
   font-size: 14px;
 }
+
 .description {
   color: #535353;
 }
+
 .quantitySelection {
   font-size: 13px;
 }
+
 .quantityContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+
 .quantityContainer span {
   color: black;
   font-size: 16px;
 }
+
 .quantityContainer button {
   background: none;
   border: none;
   font-size: 20px;
   cursor: pointer;
 }
+
 .total {
-  background-color: #ffb83b;
+  background-color: #383838;
   padding: 0 5px;
   border-radius: 33px;
-  color: #535353;
+  color: #ffffff;
 }
+
 .addCart {
-  background-color: #247504;
+  background-color: #CB0D71;
   color: #d9d9d9;
   border: none;
   width: 197px;
@@ -267,6 +267,7 @@
   padding: 30px;
   gap: 20px;
 }
+
 .containerCategory {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +275,7 @@
   padding: 40px 20px;
   gap: 10px;
 }
+
 .containerCategory button {
   font-size: 17px;
   color: #535353;
@@ -286,19 +288,23 @@
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease-in-out;
 }
+
 .offOfertas {
   display: flex;
   justify-content: center;
 }
+
 .hortalizas,
 .Frutas {
   display: flex;
   gap: 10px;
 }
+
 .arrow {
   width: 20px;
   height: 20px;
 }
+
 .customAlert {
   background-color: rgba(212, 212, 212, 0.15);
   backdrop-filter: blur(20px);
@@ -308,8 +314,9 @@
   font-size: 12px;
   display: flex;
 }
+
 .customAlertInfo {
-  background-color:#fff;
+  background-color: #fff;
   backdrop-filter: blur(20px);
   border-radius: 15px;
   border: 1px solid #d4d4d4d6;
@@ -318,41 +325,61 @@
   display: flex;
   height: 400px;
 }
+
 .customIconSuc {
   font-size: 10px;
   background-color: #004718;
   text-align: center;
 }
+
 .customIconErr {
   font-size: 5px;
   background-color: #b90003;
   text-align: center;
 }
+
 .categoryTitle {
   color: black;
   font-weight: 500;
   padding-top: 0;
   font-size: 46px;
 }
+
 .titleOfertas {
   font-weight: 800;
   font-size: 52px;
   text-align: center;
-  color: #ba457b;
+  color: #ffffff;
   letter-spacing: 2px;
   transition: transform 0.3s ease;
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.8rem;
 }
 
 .titleOfertas:hover {
   transform: scale(1.08);
 }
+
 .categoryContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0 10px 0;
   gap: 10px;
+  background-color: #383838;
 }
+
 .iconCategories {
   width: 40px;
   height: 40px;
@@ -363,7 +390,8 @@
 /* Estilo para el contenedor del producto cuando no hay stock */
 .disabledProduct {
   opacity: 0.6;
-  filter: grayscale(80%); /* Lo pone en escala de grises para que se note más */
+  filter: grayscale(80%);
+  /* Lo pone en escala de grises para que se note más */
 }
 
 /* Contenedor para el texto "SIN STOCK" */
@@ -371,7 +399,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: auto; /* Empuja el cartel hacia abajo */
+  margin-top: auto;
+  /* Empuja el cartel hacia abajo */
   padding: 20px 0;
   width: 100%;
 }
@@ -379,19 +408,21 @@
 /* Estilo del texto "SIN STOCK" */
 .sinStockText {
   font-weight: bold;
-  color: #c0392b; /* Un color rojo */
+  color: #c0392b;
+  /* Un color rojo */
   border: 2px solid #c0392b;
   padding: 8px 16px;
   border-radius: 5px;
   background-color: rgba(192, 57, 43, 0.1);
   font-size: 1rem;
 }
+
 @media (max-width: 768px) {
   .iconCategories {
     width: 25px;
     height: 25px;
   }
-  
+
   .arrowLeft,
   .arrowRight {
     display: none;
@@ -405,24 +436,30 @@
     background-color: transparent;
     padding: 15px 0 20px 0;
   }
+
   .categoryTitle {
     font-size: 30px;
   }
+
   .categoryContainer {
     padding: 10px 0 0 10px;
   }
+
   .cartContainer {
     width: 200px;
   }
+
   .img {
     width: 170px;
     height: 140px;
     border-radius: 13px;
   }
+
   .addCart {
     width: 150px;
     font-size: 15px;
   }
+
   .seeMoreBtn {
     height: 30px;
     width: 140px;
@@ -430,52 +467,65 @@
     font-family: "Poppins", serif;
     color: #ffffff;
   }
+
   .containerCategory {
     flex-direction: column;
     width: 100%;
     overflow: hidden;
     padding: 40px 10px;
   }
+
   .containerCategory button {
     font-size: 12px;
     padding: 0;
     height: 30px;
     width: 100%;
   }
+
   .hortalizas,
   .Frutas {
     flex-direction: column;
   }
+
   .arrow {
     transform: rotate(90deg);
     width: 15px;
     height: 15px;
   }
+
   .titleOfertas {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
   .quantitySelection,
   .total {
     text-align: center;
   }
+
   .total {
     font-size: 14px;
   }
+
   .customAlert {
     font-size: 10px;
   }
-  .iconOfertas {
-    font-size: 20px;
-  }
+
   .offOfertas {
     font-size: 10px;
   }
+
   .discountBadge {
     top: 115px;
     height: 40px;
     width: 40px;
-  }.productName {
-  font-size: 14px;
-  
-}
+  }
+
+  .productName {
+    font-size: 14px;
+
+  }
 }

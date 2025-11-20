@@ -131,7 +131,7 @@ function BuscarPedidos() {
               );
             })
           ) : (
-            <p>No hay pedidos para esta fecha.</p>
+            <p className={style.noPedido}>No hay pedidos para esta fecha.</p>
           )}
         </div>
 

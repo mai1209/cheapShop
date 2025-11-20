@@ -267,7 +267,7 @@ useEffect(() => {
         <div key={_id} className={`${style.cartContainer} ${stock === 0 ? style.disabledProduct : ''}`}>
         <img
             className={style.img}
-            src={`/${imagen}`}
+            src='./buzo.png'
             alt={nombre}
         />
 

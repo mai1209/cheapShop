@@ -30,12 +30,11 @@ function DiscountedProducts({
   return (
     <>
       <div className={style.containerOfertas}>
-        <p className={style.iconOfertas}>
-          <img src="../../../ofertasIcon.png" alt="" />
-        </p>
+      
         <h3 id="ofertas" className={style.titleOfertas}>
-          OFERTAS
+         Products Our Clients Can’t Resist
         </h3>
+        <p className={style.subtitle}>Hyped products</p>
       </div>
 
       <div className={style.descuento}>
@@ -66,15 +65,11 @@ function DiscountedProducts({
               imagen,
             }) => (
               <div key={_id} className={style.cartContainer}>
-                <img className={style.img} src={`/${imagen}`} alt={nombre} />
+                <img className={style.img} src='./buzo.png' alt={nombre} />
 
           
                 <div className={style.discountBadge}>{descuento}%</div>
 
-                <div className={style.sale}>
-                  <img src="../../../Star 1.png" alt="sale" />
-                  <p>%</p>
-                </div>
 
                 <p className={style.priceUnit}>
                   Precio: ${precioConDescuento?.toFixed(2) || "0.00"}{" "}

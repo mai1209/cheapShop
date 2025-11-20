@@ -31,7 +31,10 @@
 }
 
 .container {
- 
+   background-image: url("/background4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   max-height: fit-content;
   min-height: 100vh;
   backdrop-filter: blur(20px);
@@ -244,7 +247,7 @@ span button {
     height: 110px;
   }
   .container {
-    background-image: url("/backgroundLR.png");
+    background-image: url("/background4.jpg");
   }
   .containerLogin {
     background-image: url("/background4.jpg");
